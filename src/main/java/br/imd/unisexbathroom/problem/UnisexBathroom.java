@@ -86,7 +86,7 @@ public class UnisexBathroom {
 
             System.out.println("Saiu " + person.getName() + " " + person.getGender());
 
-            isFullOrWrongGender.signalAll();
+            isFullOrWrongGender.signal();
 
         } catch (InterruptedException e) {
             e.printStackTrace();
